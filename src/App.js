@@ -1,21 +1,22 @@
 import React, { useState } from "react";
 import Button from "./components/UI/Button/Button";
 import "./App.css";
+import DemoOutput from "./components/Demo/DemoOutput";
 
 function App() {
 	const [showParagraph, setShowParagraph] = useState(false);
 
 	console.log("APP RUNNING");
 
-	const toggleParagraphHandler = () => {
+	const clickHereHandler = () => {
 		setShowParagraph((prevShowParagraph) => !prevShowParagraph);
 	};
 
 	return (
 		<div className="app">
 			<h1>Hi there!</h1>
-			{showParagraph && <p className="paragraph">This is new!</p>}
-			<Button onClick={toggleParagraphHandler}>CLICK HERE!</Button>
+			<DemoOutput />
+			<Button onClick={clickHereHandler}>CLICK HERE!</Button>
 		</div>
 	);
 }
