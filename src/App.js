@@ -24,7 +24,7 @@ function App() {
 			<DemoOutput show={showParagraph} />
 			<Button onClick={clickHereHandler}>CLICK HERE!</Button>
 			<DemoOutput show={showText} />
-			{showText && <h2>I see you</h2>}
+			{showText && <h2 className="text">I SEE YOU!</h2>}
 			<Button onClick={clickHereNowHandle}>CLICK HERE NOW !</Button>
 		</div>
 	);

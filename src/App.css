@@ -20,3 +20,10 @@
 	font-weight: bolder;
 	font-family: monospace;
 }
+
+.text {
+	color: rgb(25, 246, 1);
+	font-size: large;
+	font-weight: bold;
+	font-family: monospace;
+}
